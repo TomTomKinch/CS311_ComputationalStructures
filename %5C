@@ -1,0 +1,44 @@
+/*******************************
+* dfa_project.cpp
+* Thomas Kinch
+* 5/23/18
+*******************************/
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+	//Declare File
+	ifstream num_file;
+	num_file.open("numbers.txt");
+	
+	//Check if file is open
+	if(!num_file){
+		cerr << "Unable to Open File \n";
+		return 0;
+	}
+	
+	//Declare/fill array of numbers
+	int line[100]; // Buffer
+	line_count = 0;
+	char ** num_array;
+	char c;
+	int row = 0, col = 0;
+
+	while(fgets(line, sizeof(line), num_file) != NULL){
+		line_count++;
+	}
+	rewind(num_file);
+	
+	array = malloc(line_count * sizeof(char*));
+	if(num_Array == NULL){
+		return NULL;
+	}
+	
+	//Close File
+	num_file.close();
+
+	return 0;
+}
